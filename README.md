@@ -5,9 +5,9 @@
 ##Summary
 
 ### Learning Goals
-* Dig in to your understanding of break, next, and continue
-* Learn what return really does
-* Learn the differences between break, next, and continue in a block vs. a loop
+* Understand `break`, `next`, and `continue`.
+* Learn what `return` really does
+* Learn the differences between `break`, `next`, and `continue` in a block vs. a loop.
 
 ### Objectives
 
