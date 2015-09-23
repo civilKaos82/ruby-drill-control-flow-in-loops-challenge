@@ -1,20 +1,57 @@
-# uncomment each of the following comments individually
-# to see how break, next, and return affect loop control flow.
+# Generic looping method: no break, next, or return
+def loop_no_extras
+  numbers = []
+  counter = 0
 
-def looper
-  i = 0
-  while i < 20
-    i += 1
-    # break if i == 9
-    # next if i.even?
-    # return if i == 9
-    puts i
+  while counter < 20
+    counter += 1
+    numbers << counter
   end
-  puts "done with the loop"
+
+  numbers
 end
 
-looper
 
-# If you return within a loop, what happens?
-# How would you skip an item in a loop?
-# How would you stop a loop from continuing without exiting the method?
+# Loops with a break condition
+def loop_with_break
+  numbers = []
+  counter = 0
+
+  while counter < 20
+    counter += 1
+    break if counter == 11
+    numbers << counter
+  end
+
+  numbers
+end
+
+
+# Loops with a next condition
+def loop_with_next
+  numbers = []
+  counter = 0
+
+  while counter < 20
+    counter += 1
+    next if counter.even?
+    numbers << counter
+  end
+
+  numbers
+end
+
+
+# Loops with a return condition
+def loop_with_return
+  numbers = []
+  counter = 0
+
+  while counter < 20
+    counter += 1
+    return 'returning' if counter == 5
+    numbers << counter
+  end
+
+  numbers
+end

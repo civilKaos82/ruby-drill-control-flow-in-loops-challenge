@@ -1,29 +1,46 @@
-def blocker(&block)
-  20.times do
-    puts yield(block)
+# Executes a block with no calls to next, break, or return
+def run_block_no_extras
+  numbers = []
+
+  (1..20).each do |number|
+    numbers << number
   end
+
+  numbers
 end
 
+# Executes a block with a next contition
+def run_block_with_next
+  numbers = []
 
-# Uncomment each comment individually to see how break, next, and return affect
-# block control flow.
-
-def use_blocker
-  blocker do
-    # next
-    # break
-    # return
-    "HA!"
-    # next
-    # break
-    # return
+  (1..20).each do |number|
+    next if number.odd?
+    numbers << number
   end
-  puts "DONE!"
+
+  numbers
 end
 
-use_blocker
+# Executes a block with a break contition
+def run_block_with_break
+  numbers = []
 
+  (1..20).each do |number|
+    break if number == 11
+    numbers << number
+  end
 
-# If you return within a block, what happens?
-# What does the block return when you break? next?
-# Does ordering affect next, break, and return? If so, how?
+  numbers
+end
+
+# Executes a block with a return contition
+def run_block_with_return
+  numbers = []
+
+  (1..20).each do |number|
+    return 'returning' if number == 11
+    numbers << number
+  end
+
+  numbers
+end
