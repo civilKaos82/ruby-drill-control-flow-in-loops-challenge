@@ -53,7 +53,7 @@ Once all the tests pass, there are some questions to answer in the *In Loops* se
 
 
 ### Release 1: Control Flow in Blocks
-A similar set of methods has been written in the file `in_blocks.rb`.  The tests have been written in the file `spec/in_blocks_spec.rb`.  Follow the same process from *Release 0* for these methods.
+A similar set of methods has been written in the file `in_blocks.rb`.  Here the keywords are being used within blocks rather than loops.  The tests have been written in the file `spec/in_blocks_spec.rb`.  Follow the same process from *Release 0* for these methods.
 
 
 ## Conclusion
