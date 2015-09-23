@@ -49,7 +49,7 @@ def loop_with_return
 
   while counter < 20
     counter += 1
-    return 'returning' if counter == 5
+    return counter if counter == 5
     numbers << counter
   end
 

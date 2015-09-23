@@ -38,7 +38,7 @@ def run_block_with_return
   numbers = []
 
   (1..20).each do |number|
-    return 'returning' if number == 11
+    return number if number == 11
     numbers << number
   end
 
