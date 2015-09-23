@@ -19,7 +19,7 @@ end
 ```
 *Figure 1*. Finding five local friends to invite, using `if` statements.
 
-In Figure 1 we see some code that attempts to select friends to invite to do something.  We have a collection of friends, and we can invite five of them, but we only want to invite local friends.  The code uses `if` statements to control the flow of the program.  (1) If we've found a friend to invite for each open seat, don't do anything.  If there are open still open seats, then (2) invite the friend if the friend is local.
+In Figure 1 we see some code that attempts to select friends to invite to do something.  We have a collection of friends, and we can invite five of them, but we only want to invite local friends.  The code uses `if` statements to control the flow of the program.  (1) If we've found a friend to invite for each open seat, don't do anything.  If there are still open seats, then (2) invite the friend if the friend is local.
 
 Using this logic, we will end up iterating over our entire collection of friends—even if we want to invite the first five friends in our list.  Why continue looking through our friends, when we know that we can't invite anymore?  Wouldn't it be nice to stop looking for friends to invite once we've found one for each open seat?  And, what if we could just move on to the next friend unless the current friend is local?
 
