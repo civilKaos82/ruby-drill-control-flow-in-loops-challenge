@@ -38,7 +38,7 @@ Ruby provides keywords that give us finer control when iterating and that allow 
 
 ## Releases
 ### Release 0: Control Flow in Loops
-A series of methods have been written in the file `in_loops.rb`.  The code for each method is similar expect for the use of one of the keywords that we're exploring in this challenge.
+A series of methods have been written in the file `in_loops.rb`.  The code for each method is similar except for the use of one of the keywords that we're exploring in this challenge.
 
 A test for each method has been written in the file `spec/in_loops_spec.rb`.  Before we run the tests, we need to read through each method and update the expected value for each test based on how we believe the method should behave.  The expected value of the `loop_no_extras` method is provided as an example.
 
