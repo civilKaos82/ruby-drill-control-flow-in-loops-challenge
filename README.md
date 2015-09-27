@@ -57,4 +57,4 @@ A similar set of methods has been written in the file `in_blocks.rb`.  Here the 
 
 
 ## Conclusion
-Control flow is an necessary part of programming.  Unfortunately, if can sometimes lead an unreadable mess of conditionals.  The `next`, `break`, and `return` keywords help us to add complex flow control in a more readable way.
+Control flow is a necessary part of programming.  Unfortunately, it can sometimes lead to an unreadable mess of conditionals.  The `next`, `break`, and `return` keywords help us to add complex flow control in a more readable way.
