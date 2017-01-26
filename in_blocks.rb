@@ -9,7 +9,7 @@ def run_block_no_extras
   numbers
 end
 
-# Executes a block with a next contition
+# Executes a block with a next condition
 def run_block_with_next
   numbers = []
 
@@ -21,7 +21,7 @@ def run_block_with_next
   numbers
 end
 
-# Executes a block with a break contition
+# Executes a block with a break condition
 def run_block_with_break
   numbers = []
 
@@ -33,7 +33,7 @@ def run_block_with_break
   numbers
 end
 
-# Executes a block with a return contition
+# Executes a block with a return condition
 def run_block_with_return
   numbers = []
 
